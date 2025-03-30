@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "better-wooden-decoration-mod",
+	"version": "${version}",
+	"name": "Better Wooden Decoration Mod",
+	"description": "Better Wooden Decoration Mod将会为你的Minecraft添加更多的木制家具",
+	"authors": [
+		"RonitYon2112小蝾"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/better-wooden-decoration-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ronityon2112.betterwoodendecorationmod.BetterWoodenDecorationMod"
+		],
+		"fabric-datagen": [
+			"com.ronityon2112.betterwoodendecorationmod.BetterWoodenDecorationModDataGenerator"
+		],
+		"client": [
+			"com.ronityon2112.betterwoodendecorationmod.BetterWoodenDecorationModClient"
+		]
+	},
+	"mixins": [
+		"better-wooden-decoration-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
