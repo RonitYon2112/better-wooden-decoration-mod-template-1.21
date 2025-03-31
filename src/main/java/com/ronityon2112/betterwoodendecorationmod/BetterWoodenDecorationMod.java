@@ -1,5 +1,6 @@
 package com.ronityon2112.betterwoodendecorationmod;
 
+import com.ronityon2112.betterwoodendecorationmod.item.ModItemGroups;
 import com.ronityon2112.betterwoodendecorationmod.item.Moditems;
 import net.fabricmc.api.ModInitializer;
 
@@ -21,6 +22,8 @@ public class BetterWoodenDecorationMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		Moditems.registerModItems();
+		ModItemGroups.registerModItemGroups();
+
 		LOGGER.info("Hello Fabric world!");
 	}
 }
