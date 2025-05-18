@@ -27,9 +27,9 @@ public class ModItemGroups {
 //    }
     public static final ItemGroup BETTERWOODENDECORATION_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(BetterWoodenDecorationMod.MOD_ID,"betterwoodendecoration_group"),
         ItemGroup.create(null,-1).displayName(Text.translatable("ItemGroup.betterwoodendecorationmod"))
-                .icon(() -> new ItemStack(Moditems.CARPENTER_BOOK))
+                .icon(() -> new ItemStack(Moditems.STAKE))
                 .entries((displayContext, entries) -> {
-                    entries.add(Moditems.CARPENTER_BOOK);
+                    entries.add(Moditems.STAKE);
                 }).build());
     public static void registerModItemGroups(){
         BetterWoodenDecorationMod.LOGGER.info("Registering Item Groups");

@@ -11,17 +11,20 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 public class Moditems {
-    public static  final Item CARPENTER_BOOK = registerItems("carpenter_book", new Item(new Item.Settings()));
+    public static  final Item STAKE = registerItems("stake", new Item(new Item.Settings()));
     private static Item registerItems(String id, Item item){
 
 //        return Registry.register(Registries.ITEM, RegistryKey.of(Registries.ITEM.getKey(), Identifier.of(BetterWoodenDecorationMod.MOD_ID, id)), item);
         return Registry.register(Registries.ITEM, Identifier.of(BetterWoodenDecorationMod.MOD_ID, id), item);
     }
     private static void addItemToIG(FabricItemGroupEntries fabricItemGroupEntries){
-        fabricItemGroupEntries.add(CARPENTER_BOOK);
+        fabricItemGroupEntries.add(STAKE);
     }
-    public static  void  registerModItems(){
+
+    public static  void  registerModItems() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(Moditems::addItemToIG);
         BetterWoodenDecorationMod.LOGGER.info("Registering Items");
     }
+
 }
+
